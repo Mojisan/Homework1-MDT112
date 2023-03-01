@@ -46,6 +46,22 @@ namespace Homework1 {
                     break;
                     case"NSA":
                     Console.WriteLine("Hello NSA");
+                    if(30 % ((int)password[5] - 48) == 0) {
+                        if(((int)password[3] - 48) % 3 == 0 && ((int)password[3] - 48) % 2 != 0) {
+                           if(((int)password[0] -48) == 7 || ((int)password[1] -48) == 7 || ((int)password[2] -48) == 7 || 
+                           ((int)password[3] -48) == 7 || ((int)password[4] -48) == 7 || ((int)password[5] -48) == 7) {
+                            Console.WriteLine("True");
+                           } else {
+                            Console.WriteLine("False");
+                           }
+                        }
+                        else {
+                            Console.WriteLine("False");
+                        }
+                    }
+                    else {
+                            Console.WriteLine("False");
+                    }
                     break;
                     default:
                     Console.WriteLine("Error");
