@@ -8,8 +8,20 @@ namespace Homework1 {
             Console.Write("Agency : ");
             agency = Console.ReadLine();
 
-            Console.WriteLine(password);
-            Console.WriteLine(agency);
+            switch(agency) {
+                case"CIA":
+                Console.WriteLine("Hello CIA");
+                break;
+                case"FBI":
+                Console.WriteLine("Hello FBI");
+                break;
+                case"NSA":
+                Console.WriteLine("Hello NSA");
+                break;
+                default:
+                Console.WriteLine("Error");
+                break;
+                }
         }
     }
 }
