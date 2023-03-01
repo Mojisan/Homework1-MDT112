@@ -6,7 +6,7 @@ namespace Homework1 {
             Console.Write("Password : ");
             password = Console.ReadLine();
 
-            if(password.Length <= 6) {
+            if(password.Length == 6 ) {
                 Console.Write("Agency : ");
                 agency = Console.ReadLine();
                 switch(agency) {
@@ -45,7 +45,7 @@ namespace Homework1 {
                     }
                     break;
                     case"NSA":
-                    if(30 % ((int)password[5] - 48) == 0) {
+                    if(((int)password[5] - 48) != 0 && 30 % ((int)password[5] - 48) == 0) {
                         if(((int)password[3] - 48) % 3 == 0 && ((int)password[3] - 48) % 2 != 0) {
                            if(((int)password[0] -48) == 7 || ((int)password[1] -48) == 7 || ((int)password[2] -48) == 7 || 
                            ((int)password[3] -48) == 7 || ((int)password[4] -48) == 7 || ((int)password[5] -48) == 7) {
