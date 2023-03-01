@@ -5,10 +5,11 @@ namespace Homework1 {
             string agency, password;
             Console.Write("Password : ");
             password = Console.ReadLine();
-            Console.Write("Agency : ");
-            agency = Console.ReadLine();
 
-            switch(agency) {
+            if(password.Length <= 6) {
+                Console.Write("Agency : ");
+                agency = Console.ReadLine();
+                switch(agency) {
                 case"CIA":
                 Console.WriteLine("Hello CIA");
                 break;
@@ -21,7 +22,11 @@ namespace Homework1 {
                 default:
                 Console.WriteLine("Error");
                 break;
-                }
+            }
+            }
+            else {
+                Console.WriteLine("Error");
+            }
         }
     }
 }
