@@ -70,7 +70,6 @@ namespace Homework1 {
             else {
                 Console.WriteLine("Error");
             }
-
         }
     }
 }
